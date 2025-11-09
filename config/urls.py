@@ -6,9 +6,10 @@ Para adicionar novas abas, basta editar o dicionário 'tabs' abaixo.
 """
 
 tabs = {
-    "Home": "https://www.contax.com.br",
-    "Dashboard Financeiro": "https://app.powerbi.com/view?r=xxxx",
-    "Relatórios": "https://drive.google.com/xxxx",
-    "Suporte": "https://contax.atlassian.net"
+     "Home": "https://www.contax.com.br",
+     "Portal Financeiro": "https://gdp-dashboard-60uvb3secte.streamlit.app/",
+     "Chatbot": "ttps://chatbot-3ysuzjb5ovm.streamlit.app",
+     "Plataforma de Extração de Documentos": "https://extraction-document-v1.streamlit.app/"
 }
+
 
