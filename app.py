@@ -26,9 +26,9 @@ except ImportError:
     # Fallback caso a importação falhe
     tabs = {
         "Home": "https://www.contax.com.br",
-        "Dashboard Financeiro": "https://app.powerbi.com/view?r=xxxx",
-        "Relatórios": "https://drive.google.com/xxxx",
-        "Suporte": "https://contax.atlassian.net"
+        "Portal Financeiro": "https://gdp-dashboard-60uvb3secte.streamlit.app/",
+        "Chatbot": "ttps://chatbot-3ysuzjb5ovm.streamlit.app",
+        "Plataforma de Extração de Documentos": "https://extraction-document-v1.streamlit.app/"
     }
 
 # ============================================================================
@@ -267,4 +267,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
