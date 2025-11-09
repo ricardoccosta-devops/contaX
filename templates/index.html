@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero">
+    <div class="container">
+        <h1>Bem-vindo à ContaX</h1>
+        <p class="subtitle">Soluções Contábeis Inteligentes com Inteligência Artificial</p>
+        <p>Transforme sua gestão contábil com tecnologia de ponta e atendimento personalizado</p>
+        <a href="{{ url_for('services') }}" class="btn btn-primary">Conheça Nossos Serviços</a>
+    </div>
+</section>
+
+<section class="features">
+    <div class="container">
+        <h2>Por que escolher a ContaX?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>🤖 IA Integrada</h3>
+                <p>Assistente virtual inteligente para tirar suas dúvidas sobre contabilidade 24/7</p>
+            </div>
+            <div class="feature-card">
+                <h3>📊 Análise Avançada</h3>
+                <p>Relatórios detalhados e análises preditivas para melhor tomada de decisão</p>
+            </div>
+            <div class="feature-card">
+                <h3>🔒 Segurança</h3>
+                <p>Seus dados protegidos com as mais avançadas tecnologias de segurança</p>
+            </div>
+            <div class="feature-card">
+                <h3>⚡ Agilidade</h3>
+                <p>Processos otimizados para entregas rápidas e eficientes</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="chat-section">
+    <div class="container">
+        <h2>Assistente Virtual ContaX</h2>
+        <p>Tire suas dúvidas sobre nossos serviços contábeis com nosso assistente virtual inteligente</p>
+        
+        <div class="chat-container">
+            <div id="chatMessages" class="chat-messages">
+                <div class="message bot-message">
+                    <p>Olá! Sou o assistente virtual da ContaX. Como posso ajudá-lo hoje?</p>
+                </div>
+            </div>
+            <div class="chat-input-container">
+                <input type="text" id="chatInput" placeholder="Digite sua mensagem..." />
+                <button id="sendButton" class="btn btn-primary">Enviar</button>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+{% endblock %}

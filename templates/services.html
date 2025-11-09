@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+
+{% block title %}Serviços - ContaX{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <div class="container">
+        <h1>Nossos Serviços</h1>
+        <p>Soluções completas para sua empresa</p>
+    </div>
+</section>
+
+<section class="services-content">
+    <div class="container">
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>📋 Contabilidade Digital</h3>
+                <p>Gestão contábil completa com tecnologia de ponta, incluindo escrituração digital, demonstrações financeiras e balanços patrimoniais.</p>
+                <ul>
+                    <li>Escrituração digital automatizada</li>
+                    <li>Demonstrações financeiras em tempo real</li>
+                    <li>Conciliação bancária inteligente</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <h3>💼 Assessoria Fiscal</h3>
+                <p>Planejamento tributário e compliance fiscal para otimizar sua carga tributária dentro da legalidade.</p>
+                <ul>
+                    <li>Planejamento tributário estratégico</li>
+                    <li>Apuração de impostos</li>
+                    <li>Gestão de obrigações acessórias</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <h3>👥 Departamento Pessoal</h3>
+                <p>Gestão completa de recursos humanos e folha de pagamento com conformidade trabalhista garantida.</p>
+                <ul>
+                    <li>Folha de pagamento automatizada</li>
+                    <li>Gestão de benefícios</li>
+                    <li>eSocial e outras obrigações</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <h3>📊 Business Intelligence</h3>
+                <p>Análise de dados e relatórios gerenciais para suportar decisões estratégicas do seu negócio.</p>
+                <ul>
+                    <li>Dashboards interativos</li>
+                    <li>Análise preditiva com IA</li>
+                    <li>Relatórios personalizados</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <h3>🤖 Consultoria com IA</h3>
+                <p>Assistente virtual inteligente disponível 24/7 para responder dúvidas sobre contabilidade e finanças.</p>
+                <ul>
+                    <li>Suporte instantâneo via chat</li>
+                    <li>Respostas personalizadas</li>
+                    <li>Aprendizado contínuo</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <h3>🏢 Abertura de Empresas</h3>
+                <p>Processo completo de constituição empresarial de forma rápida e descomplicada.</p>
+                <ul>
+                    <li>Consultoria sobre tipo de empresa</li>
+                    <li>Registro em todos os órgãos</li>
+                    <li>Alvarás e licenças</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta-section">
+    <div class="container">
+        <h2>Pronto para começar?</h2>
+        <p>Entre em contato conosco e descubra como podemos ajudar sua empresa</p>
+        <a href="{{ url_for('contact') }}" class="btn btn-primary">Fale Conosco</a>
+    </div>
+</section>
+{% endblock %}
