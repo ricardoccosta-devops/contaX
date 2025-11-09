@@ -78,4 +78,6 @@ def chat():
         return jsonify({'error': 'Ocorreu um erro ao processar sua mensagem. Tente novamente.'}), 500
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    # Only enable debug mode if explicitly set in environment
+    debug_mode = os.getenv('FLASK_ENV') == 'development'
+    app.run(debug=debug_mode, host='0.0.0.0', port=5000)
